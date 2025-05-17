@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5680","Проверка названия Issue - чистый Selenide (с Listener)","","Sat May 17 15:26:12 GMT 2025","passed","Sat May 17 15:26:17 GMT 2025","","allure.SelenideTest","allure.SelenideTest","issueNameSelenideTest"
+"","9051","Проверка названия Issue - лямбда шаги через step","","Sat May 17 15:26:02 GMT 2025","passed","Sat May 17 15:26:11 GMT 2025","","allure.SelenideTest","allure.SelenideTest","issueNameLambdaStepTest"
+"","5828","Проверка названия Issue - шаги с аннотацией @Step","","Sat May 17 15:26:17 GMT 2025","passed","Sat May 17 15:26:23 GMT 2025","","allure.SelenideTest","allure.SelenideTest","issueNameStepAnnotationTest"
