@@ -5,15 +5,13 @@ on: workflow_dispatch
 jobs:
   test:
     runs-on: ubuntu-latest
-    permissions:  # Добавляем права на запись
+    permissions:
       contents: write
       pages: write
       id-token: write
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
       - uses: actions/setup-java@v3
         with:
@@ -49,7 +47,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2
         if: always()
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Правильное имя параметра для v2
-          publish_branch: gh-pages
-          publish_dir: allure-history
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.GITHUB_TOKEN }}  # Правильное имя для v2
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
