@@ -77,7 +77,7 @@ public class SelenideTest {
         steps.openMainPage();
         steps.searchRepository(REPOSITORY);
         steps.clickToRepository(REPOSITORY);
-        steps.checkTabName(TAB_NAME);
+        steps.checkTabName("asd2");
         steps.takeScreenshot();
     }
 
